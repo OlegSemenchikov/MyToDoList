@@ -1,0 +1,16 @@
+.border {
+  border: #000 solid 1px;
+  border-radius: $app_radius;
+}
+.float-right{
+  float: right;
+}
+.background-red{
+  background: #FF0000;
+}
+.background-blue{
+  background: #5E62FF;
+}
+.font-family{
+  font-family: $app_font_family;
+}

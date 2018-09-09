@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyToList</title>
+    <link type="text/css" href="css/style-todolist.css" rel="stylesheet">
+</head>
+    <body>
+        <div class="todolist-wrapper border">
+            <div class="todolist__user">
+                <label for="todolist__input" class="font-family">
+                    Add activity
+                    <input type="text" placeholder="Введите новое дело..." autofocus id="todolist__input" class="border todolist__input">
+                </label>
+                <div class="float-right">
+                    <button id="btn-add" class="border todolist__button background-red">Add</button>
+                    <button id="btn-clear" class="border todolist__button background-blue">Clear</button>
+                </div>
+            </div>
+            <div class="todolist__output">
+                <div class="todolist__output-labal font-family">
+                    Todo list:
+                </div>
+                <ol class="border todolist__output-list font-family" id="todolist__output-list"></ol>
+            </div>
+        </div>
+    <script src="js/todolist.js">    </script>
+    </body>
+</html>
