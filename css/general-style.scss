@@ -11,6 +11,14 @@
 .background-blue{
   background: #5E62FF;
 }
+.background-green{
+  background: #adff2f;
+}
 .font-family{
   font-family: $app_font_family;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

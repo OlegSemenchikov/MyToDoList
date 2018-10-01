@@ -11,23 +11,34 @@
 .background-blue {
   background: #5E62FF; }
 
+.background-green {
+  background: #adff2f; }
+
 .font-family {
   font-family: sans-serif; }
 
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
 .todolist-wrapper {
   width: 250px;
-  height: 300px;
+  height: 330px;
   margin: auto;
   padding: 10px;
   background: #F0F0F0; }
 .todolist__user {
-  height: 80px; }
+  height: 100px; }
 .todolist__input {
-  height: 30px; }
-.todolist__button {
-  width: 50px;
   height: 30px;
-  display: block; }
+  padding-left: 10px;
+  width: 238px; }
+.todolist__button {
+  width: auto;
+  height: 30px;
+  margin-top: 10px;
+  font-weight: bold; }
 .todolist__output-list {
   margin: 0;
   height: 200px;

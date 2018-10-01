@@ -8,13 +8,13 @@
     <body>
         <div class="todolist-wrapper border">
             <div class="todolist__user">
-                <label for="todolist__input" class="font-family">
+                <label for="todolist__input" class="font-family"></label>
                     Add activity
-                    <input type="text" placeholder="Введите новое дело..." autofocus id="todolist__input" class="border todolist__input">
-                </label>
-                <div class="float-right">
-                    <button id="btn-add" class="border todolist__button background-red">Add</button>
-                    <button id="btn-clear" class="border todolist__button background-blue">Clear</button>
+                <input type="text" placeholder="Введите новое дело..." autofocus id="todolist__input" class="border todolist__input">
+                <div class="flex">
+                    <button id="btn-clear-all" class="border todolist__button background-red">Clear all</button>
+                    <button id="btn-clear-last" class="border todolist__button background-blue">Clear last</button>
+                    <button id="btn-add" class="border todolist__button background-green">Add</button>
                 </div>
             </div>
             <div class="todolist__output">
@@ -24,6 +24,6 @@
                 <ol class="border todolist__output-list font-family" id="todolist__output-list"></ol>
             </div>
         </div>
-    <script src="js/todolist.js">    </script>
+    <script src="js/todolist.js"></script>
     </body>
 </html>

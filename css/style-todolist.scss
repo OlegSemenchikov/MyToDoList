@@ -10,15 +10,18 @@
     background: #F0F0F0;
   }
   &__user {
-    height: 80px;
+    height: 100px;
   }
   &__input{
     height: 30px;
-  }
+    padding-left: 10px;
+    width: $input_width;
+    }
   &__button{
     width: $button_width;
     height: $button_height;
-    display: block;
+    margin-top: 10px;
+    font-weight: bold;
   }
   &__output-list {
     margin: 0;

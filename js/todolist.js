@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
         var inputUser = document.getElementById("todolist__input");
         var buttonAdd = document.getElementById("btn-add");
-        var buttonClear = document.getElementById("btn-clear");
+        var buttonClearLast = document.getElementById("btn-clear-last");
+        var buttonClearAll = document.getElementById("btn-clear-all");
         var outputList = document.getElementById("todolist__output-list");
         var toDoList = document.querySelector('ol');
         var arrActivity = [];
@@ -9,12 +10,14 @@ document.addEventListener('DOMContentLoaded', function() {
         var newActivity;
 
             buttonAdd.addEventListener('click', clickButtonAdd);
-            buttonClear.addEventListener('click', clickButtonClear);
+            buttonClearLast.addEventListener('click', clickButtonClearLast);
+            buttonClearAll.addEventListener('click', clickButtonClearAll);
+
             toDoList.addEventListener('click',checkedList);
 
                 function clickButtonAdd() {
                     if(inputUser.value == "") {
-                        alert("Введите ваше дело!");
+                        alert("Введите новое дело!");
                     } else {
                         arrActivity.push(inputUser.value);
                         newActivity = document.createElement("li");
@@ -22,14 +25,16 @@ document.addEventListener('DOMContentLoaded', function() {
                         outputList.appendChild(newActivity);
                         inputUser.value="";
                         i++;
-                        if((i!=0)&&(i%3==0)){
-                            newActivity.style.color = getRandomColor();
-                            newActivity.style.background = getRandomColor();
-                        }
+                        newActivity.style.color = getRandomColor();
+                        newActivity.style.background = getRandomColor();
                     }
                 }
 
-                function clickButtonClear() {
+                function clickButtonClearLast() {
+                    outputList.removeChild(outputList.children[outputList.children.length-1]);
+                }
+
+                function clickButtonClearAll() {
                     arrActivity = [];
                     outputList.innerHTML = arrActivity;
                     inputUser.value="";
